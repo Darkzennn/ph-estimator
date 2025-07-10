@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Philippine House Construction Cost Estimator 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏠 Philippine House Construction Cost Estimator</h1>
+      <p>Get a quick cost estimate for your house construction project in the Philippines (2025 rates)</p>
+    </header>
+
+    <div class="calculator-section">
+      <div class="input-group">
+        <label for="lotArea">Lot Area (sqm):</label>
+        <input type="number" id="lotArea" placeholder="Enter lot area in square meters" min="1" />
+      </div>
+
+      <div class="input-group">
+        <label for="numFloors">Number of Floors:</label>
+        <select id="numFloors">
+          <option value="">Select number of floors</option>
+          <option value="1">1 Floor</option>
+          <option value="2">2 Floors</option>
+          <option value="3">3 Floors</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="areaMethod">Floor Area Calculation:</label>
+        <select id="areaMethod">
+          <option value="default">Use Standard Calculation (70% of lot area per floor)</option>
+          <option value="custom">Enter Custom Area for Each Floor</option>
+        </select>
+      </div>
+
+      <div class="custom-areas" id="customAreas">
+        <h4>Custom Floor Areas</h4>
+        <div id="floorInputs"></div>
+      </div></div>
+
+      <div class="input-group">
+        <label for="finishType">Finish Type:</label>
+        <select id="finishType">
+          <option value="">Select finish type</option>
+          <option value="basic">Basic - ₱26,000/sqm</option>
+          <option value="standard">Standard - ₱31,000/sqm</option>
+          <option value="premium">Premium - ₱39,000/sqm</option>
+        </select>
+      </div>
+
+      <div class="finish-details" id="finishDetails"></div>
+
+      <button onclick="calculateEstimate()" id="calculateBtn">💰 Calculate Estimate</button>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <div class="contact-section">
+      <h2>Need design help or a more detailed estimate?</h2>
+      <p>We offer project consultation, layout planning, and cost guidance for home builders across the Philippines.</p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📧</span>
+          <a href="mailto:darkzenanonymous@gmail.com">darkzenanonymous@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send us a message</h3>
+        <form action="https://formsubmit.co/darkzenanonymous@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Construction Cost Inquiry">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Your Phone Number" />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+          </div>
+          <button type="submit">📤 Send Message</button>
+        </form>
+      </div>
+
+      <div class="disclaimer">
+        <p><strong>Note:</strong> We do not offer construction labor. We focus on estimating, design, and project assistance.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>For inquiries, email or text.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
